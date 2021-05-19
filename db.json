@@ -9,6 +9,103 @@
     { "id": 2, "body": "some comment", "postId": 1 }
   ],
   "profile": {
-    "name": "typicode"
-  }
+  "clientName": "1-coronaApp",
+  "clientId": "be67a51f-6313-4077-8c58-c5b6eb047f89",
+  "flows": [
+    {
+      "file": "SplashActivity",
+      "base": [
+        "b1"
+      ],
+      "data": [
+        {
+          "id": "b1",
+          "path": "1615357692131-voicemaker.in-speech.mp3",
+          "view": "com.esaathi.demo:id/text_footer_text",
+          "type": "1",
+          "next": ""
+        }
+      ],
+      "next": []
+    },
+    {
+      "file": "MainActivity",
+      "base": [
+        "a1"
+      ],
+      "data": [
+        {
+          "id": "a1",
+          "path": "1615357850427-voicemaker.in-speech.mp3",
+          "view": "com.esaathi.demo:id/head",
+          "type": "1",
+          "next": ""
+        },
+        {
+          "id": "a2",
+          "path": "1615357538964-voicemaker.in-speech.mp3",
+          "view": "com.esaathi.demo:id/phone",
+          "type": "2",
+          "next": "a3"
+        },
+        {
+          "id": "a3",
+          "path": "1615357262383-voicemaker.in-speech.mp3",
+          "view": "com.esaathi.demo:id/send",
+          "type": "1",
+          "next": ""
+        },
+        {
+          "id": "a4",
+          "path": "1615357967881-voicemaker.in-speech.mp3",
+          "view": "com.esaathi.demo:id/otp",
+          "type": "2",
+          "next": "a5"
+        },
+        {
+          "id": "a5",
+          "path": "1615358055229-voicemaker.in-speech.mp3",
+          "view": "com.esaathi.demo:id/submit",
+          "type": "1",
+          "next": "a6"
+        },
+        {
+          "id": "a6",
+          "path": "1615358165572-voicemaker.in-speech.mp3",
+          "view": "com.esaathi.demo:id/resend",
+          "type": "1",
+          "next": ""
+        },
+        {
+          "id": "a7",
+          "path": "1615371375129-voicemaker.in-speech.mp3",
+          "view": "com.esaathi.demo:id/yes",
+          "type": "1",
+          "next": "a8"
+        },
+        {
+          "id": "a8",
+          "path": "1615371467841-voicemaker.in-speech.mp3",
+          "view": "com.esaathi.demo:id/no",
+          "type": "1",
+          "next": ""
+        }
+      ],
+      "next": [
+        {
+          "view": "com.esaathi.demo:id/phone",
+          "id": "a2"
+        },
+        {
+          "view": "com.esaathi.demo:id/otp",
+          "id": "a4"
+        },
+        {
+          "view": "com.esaathi.demo:id/yes",
+          "id": "a7"
+        }
+      ]
+    }
+  ]
+}
 }
